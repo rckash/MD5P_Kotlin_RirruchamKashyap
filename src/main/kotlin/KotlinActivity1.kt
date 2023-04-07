@@ -1,11 +1,13 @@
 fun main() {
-    //Form Name
-    println("Application for Employment")
-
-    //Personal Information
+    //Form Head
     var positionApplied:String = "Mobile Developer"
     var desiredSalary:Int = 100000
     var dateAvailable:Int = 90923
+    println("Application for Employment")
+    println("Position You Are Applying For: $positionApplied    Desired Salary: $desiredSalary")
+    println("Date Available for Work: $dateAvailable")
+
+    //Personal Information
     var lastName:String = "Kashyap"
     var firstName:String = "Rirrucham"
     var middleName:String = "Casanova"
@@ -20,6 +22,14 @@ fun main() {
     var isUSCitizen:Boolean = false
     var isConvictedFelony = false
     var isWillingToDrugScreen = true
+    println("\nPERSONAL INFORMATION")
+    println("Last Name: $lastName    First Name: $firstName    Middle: $middleName")
+    println("Address: $address    City: $city    State: $state    Zip: $zip")
+    println("Home Phone: $homePhone    Cell Phone: $cellPhone    Email Address: $email")
+    println("Social Security Number: $socialSecurityNum")
+    println("Are you a U.S. Citizen? $isUSCitizen")
+    println("Have you ever been convicted of a felony? $isConvictedFelony")
+    println("If selected for employment, are you willing to submit to a pre-employment drug screening test? $isWillingToDrugScreen")
 
     //Education
     var schoolName1:String = "Lyceum of the Philippines University--Batangas"
@@ -77,6 +87,7 @@ fun main() {
     //Signature and Date
     var applicantSignature:String = "rkashyap"
     var dateApplied:Int = 40623
+
 
 
 
