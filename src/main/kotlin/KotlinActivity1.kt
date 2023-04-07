@@ -48,6 +48,12 @@ fun main() {
     var degreeReceived3:String = ""
     var major3:String = ""
     var otherEducation:String = "TESDA NCII - Computer Systems Servicing"
+    println("\nEDUCATION")
+    println("School Name    Location    Years Attended    Degree Received    Major")
+    println("$schoolName1    $location1    $yearsAttended1    $degreeReceived1    $major1")
+    println("$schoolName2    $location2    $yearsAttended2    $degreeReceived2    $major2")
+    println("$schoolName3    $location3    $yearsAttended3    $degreeReceived3    $major3")
+    println("Other training, certifications or licenses held: $otherEducation")
 
     //Employment
     var employer:String = "Rowan Atkinson"
@@ -64,6 +70,16 @@ fun main() {
     var supervisorsNameTitle:String = "Tim Agnacio, Team Leader"
     var reasonForLeaving:String = "Immigration"
     var isContactLastEmployer:Boolean = true
+    println("\nEMPLOYMENT")
+    println("Employer: $employer    Dates Employed: $datesEmployedStart    to: $datesEmployedEnd")
+    println("Work Phone: $workPhone    Pay Rate: $payRate")
+    println("Address: $addressEmployment")
+    println("City: $cityEmployment    State: $stateEmployment    Zip: $zipEmployment")
+    println("Position: $positionEmployment")
+    println("Duties Performed: $dutiesPerformed")
+    println("Supervisors Name and Title: $supervisorsNameTitle")
+    println("Reason for leaving: $reasonForLeaving")
+    println("May we contact them? $isContactLastEmployer")
 
     //References
     var referenceName1:String = "Jonathan Maligaya"
@@ -78,15 +94,27 @@ fun main() {
     var referenceTitle3:String = "Head Teacher III"
     var referenceCompany3:String = "University of Calaca"
     var referencePhoneNum3:String = "99258555888"
+    println("\nREFERENCES")
+    println("Name    Title    Company    Phone")
+    println("$referenceName1    $referenceTitle1    $referenceCompany1    $referencePhoneNum1")
+    println("$referenceName2    $referenceTitle2    $referenceCompany2    $referencePhoneNum2")
+    println("$referenceName3    $referenceTitle3    $referenceCompany3    $referencePhoneNum3")
 
     //Acknowledgement and Authorization
     var isCertifyTrue:Boolean = true
     var isAuthorizeInvestigation = true
     var isMisleadingDischarge = true
+    println("\nAcknowledgement and Authorization")
+    println("I certify that all answers given herein are true and complete to the best of my knowledge. $isCertifyTrue")
+    println("I authorize investigation of all statements contained in this application for employment as may be necessary in arriving at an employment decision. $isAuthorizeInvestigation")
+    println("In the event of employment, I understand that false or misleading information given in my application or interview(s) may result in discharge. $isMisleadingDischarge")
 
     //Signature and Date
     var applicantSignature:String = "rkashyap"
     var dateApplied:Int = 40623
+    println("\n$applicantSignature    $dateApplied")
+    println("Signature of Applicant    Date")
+    println("(c)2032'PO'Eqoogtekcn")
 
 
 
