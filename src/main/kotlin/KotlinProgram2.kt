@@ -1,4 +1,5 @@
 fun main() {
+    //explicit variable declaration
     var name:String = "John Weak"
     //displaying variable value using string interpolation
     println("Hello $name")
