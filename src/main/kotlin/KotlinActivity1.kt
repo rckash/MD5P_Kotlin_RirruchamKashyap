@@ -2,7 +2,7 @@ fun main() {
     //Form Head
     var positionApplied:String = "Mobile Developer"
     var desiredSalary:Int = 100000
-    var dateAvailable:Int = 90923
+    var dateAvailable:String = "090923"
     println("Application for Employment")
     println("Position You Are Applying For: $positionApplied    Desired Salary: $desiredSalary")
     println("Date Available for Work: $dateAvailable")
@@ -57,8 +57,8 @@ fun main() {
 
     //Employment
     var employer:String = "Rowan Atkinson"
-    var datesEmployedStart:Int = 60122
-    var datesEmployedEnd:Int = 40622
+    var datesEmployedStart:String = "060122"
+    var datesEmployedEnd:Int = "040622"
     var workPhone:Long = 9123456789
     var payRate:Int = 20000
     var addressEmployment:String = "BGC, Taguig"
@@ -111,7 +111,7 @@ fun main() {
 
     //Signature and Date
     var applicantSignature:String = "rkashyap"
-    var dateApplied:Int = 40623
+    var dateApplied:String = "040623"
     println("\n$applicantSignature    $dateApplied")
     println("Signature of Applicant    Date")
     println("(c)2032'PO'Eqoogtekcn")
