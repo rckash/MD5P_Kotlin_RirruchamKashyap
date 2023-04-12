@@ -1,7 +1,7 @@
 fun main() {
     //Form Head
     var positionApplied:String = "Mobile Developer"
-    var desiredSalary:Int = 100000
+    var desiredSalary:Int = 100000 //Use float or double for this kind of data
     var dateAvailable:String = "090923"
     println("Application for Employment")
     println("Position You Are Applying For: $positionApplied    Desired Salary: $desiredSalary")
@@ -58,7 +58,7 @@ fun main() {
     //Employment
     var employer:String = "Rowan Atkinson"
     var datesEmployedStart:String = "060122"
-    var datesEmployedEnd:Int = "040622"
+    var datesEmployedEnd:String = "040622"
     var workPhone:Long = 9123456789
     var payRate:Int = 20000
     var addressEmployment:String = "BGC, Taguig"
