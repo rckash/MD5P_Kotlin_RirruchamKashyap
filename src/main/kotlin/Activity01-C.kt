@@ -24,6 +24,6 @@ fun main() {
     var expectedNextRestock:String = "10202022"
     var isSale:Boolean = true
     var discount:Float = 0.25f
-    var isFlammable = false
-    var isToxic = false
+    val isFlammable = false
+    val isToxic = false
 }
