@@ -1,8 +1,11 @@
+import kotlin.math.roundToInt
+import kotlin.math.roundToLong
+
 fun main() {
     // variables
     var length : Float = 0f
     var width : Float = 0f
-    var perimeter : Float = 0f
+    var perimeter : Float = 0.00f
     var area : Float = 0f
 
     // input
@@ -16,6 +19,6 @@ fun main() {
     area = length * width
 
     // output
-    println("Perimeter is $perimeter")
-    println("Area is $area")
+    println("Perimeter is %.2f".format(perimeter))    //formats float to show 2 decimal values
+    println("Area is %.3f".format(area))    //formats float to show 3 decimal values
 }
