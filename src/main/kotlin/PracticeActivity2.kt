@@ -19,6 +19,6 @@ fun main() {
     area = length * width
 
     // output
-    println("Perimeter is %.2f".format(perimeter))    //formats float to show 2 decimal values
-    println("Area is %.3f".format(area))    //formats float to show 3 decimal values
+    println("Perimeter is ${String.format("%.2f",perimeter)}")    //formats float to show 2 decimal values
+    println("Area is ${String.format("%.3f",perimeter)}")    //formats float to show 3 decimal values
 }
