@@ -1,5 +1,5 @@
 fun main() {
-    // if statement
+    // if-else statement
     // variables
     var age : Int = 0
     // < > <= >= == !=
