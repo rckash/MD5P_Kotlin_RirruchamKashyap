@@ -24,6 +24,7 @@ fun main() {
         discountPrice = salesPrice
     } else {
         println("Invalid sales price: Please enter a positive number.")
+        salesPrice = 0f
     }
     netPrice = salesPrice - discountPrice
 
