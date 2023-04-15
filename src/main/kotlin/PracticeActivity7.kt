@@ -9,8 +9,7 @@ fun main() {
     // process + output
     if (num % 2 == 0) {
         println("The number is even.")
-    }
-    else {
+    } else {
         println("The number is odd.")
     }
 }
