@@ -9,11 +9,9 @@ fun main() {
     //process + output
     if (num > 0) {
         println("The number is positive.")
-    }
-    else if (num < 0) {
+    } else if (num < 0) {
         println("The number is negative.")
-    }
-    else {
+    } else {
         println("The number is zero.")
     }
 }
