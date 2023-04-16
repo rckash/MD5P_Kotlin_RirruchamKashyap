@@ -1,9 +1,9 @@
 fun main() {
     // variables
     var farePrice : Float = 0f
-    var passengerType : String = ""
+    var passengerType : Char = 'O'
     var discountPrice : Float = 0f
-    var businessClassCheck : String = ""
+    var businessClassCheck : Char = 'N'
     var isBusinessClass : Boolean = false
     var businessClassCharge : Float = 0f
 
@@ -11,19 +11,21 @@ fun main() {
     println("Enter fare: ")
     farePrice = readln().toFloat()
     println("Passenger Type [O,S,C]: ")
-    passengerType = readln()
+    passengerType = readln().first()
     println("Travelling in Business Class? [Y/N]: ")
-    businessClassCheck = readln()
+    businessClassCheck = readln().first()
 
     // process
-    if (businessClassCheck == "Y") {
+    if (businessClassCheck == 'Y') {
         isBusinessClass = true
-    } else {
+    } else if (businessClassCheck == 'N') {
         isBusinessClass = false
+    } else {
+        println("Invalid Input: defaulting choice to N")
     }
 
     when (passengerType) {
-        "O" -> {
+        'O' -> {
             discountPrice = 0f
             farePrice -= discountPrice
             if (isBusinessClass == true) {
@@ -31,7 +33,7 @@ fun main() {
                 farePrice += businessClassCharge
             }
         }
-        "S" -> {
+        'S' -> {
             discountPrice = farePrice * 0.05f
             farePrice -= discountPrice
             if (isBusinessClass == true) {
@@ -39,13 +41,16 @@ fun main() {
                 farePrice += businessClassCharge
             }
         }
-        "C" -> {
+        'C' -> {
             discountPrice = farePrice * 0.1f
             farePrice -= discountPrice
             if (isBusinessClass == true) {
                 businessClassCharge = 500f
                 farePrice += businessClassCharge
             }
+        }
+        else -> {
+            println("Invalid Passenger Type: defaulting choice to O")
         }
     }
 
