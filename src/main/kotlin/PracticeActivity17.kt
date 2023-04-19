@@ -10,7 +10,7 @@ fun main() {
     while (counter < 5) {
         println("Enter Number ${counter + 1}: ")
         num = readln().toInt()
-        total+=num
+        total+=num //total = total + num
         counter++
     }
 
