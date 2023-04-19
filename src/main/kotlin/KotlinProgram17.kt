@@ -11,7 +11,7 @@ fun main() {
 
         // 3 : update
         counter++
-    } while (counter > 5) // 2 : condition
+    } while (counter < 5) // 2 : condition
 
     println("Hello World!")
 }
