@@ -16,5 +16,7 @@ fun main() {
 
     // average calculation
     average = total.toFloat() / 5
+
+    // output
     println("Average is ${String.format("%.2f",average)}")
 }
