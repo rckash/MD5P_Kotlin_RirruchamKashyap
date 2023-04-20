@@ -4,7 +4,7 @@ fun main() {
     var int : Int = 0
     var answer : Char = 'Y'
 
-    while (answer == 'Y') {
+    while ((answer == 'Y') || (answer == 'y')) {
         // input
         println("Enter a positive integer: ")
         int = readln().toInt()
@@ -20,7 +20,7 @@ fun main() {
             println("Invalid Input: Integer Is Not Positive")
         }
 
-        // repeat code option for user
+        // restart code option for user
         println("Restart Program [Y/N]?")
         answer = readln().first()
         println("...")
