@@ -6,7 +6,7 @@ fun main() {
     var product : Int = 1
     var answer : Char = 'Y'
 
-    while (answer == 'Y') {
+    while ((answer == 'Y') || (answer == 'y')) {
         // input
         println("Enter a positive integer: ")
         int = readln().toInt()
@@ -14,7 +14,7 @@ fun main() {
 
         if (int > 0) {      // positive number check
         // process
-        do {
+        do {                        // conditional statement for multiplying int
             product *= counter
             counter--
         } while (counter > 0)
@@ -25,7 +25,7 @@ fun main() {
             println("Invalid Input: Integer Is Not Positive")
         }
 
-        // repeat code option for user
+        // restart code option for user
         println("Restart Program [Y/N]?")
         answer = readln().first()
         println("...")
