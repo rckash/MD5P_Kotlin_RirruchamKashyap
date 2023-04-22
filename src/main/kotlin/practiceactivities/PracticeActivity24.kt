@@ -10,6 +10,9 @@ fun main() {
     var cubeTotal = 0
     var ctr1 = 1
 
+    // table head
+    println("Number\tSquare\tCube")
+
     while (ctr1 < 6) {
         // calculation for rows
         num = ctr1 * 2
@@ -28,5 +31,5 @@ fun main() {
     }
 
     // total output
-    println("$numTotal\t$squareTotal\t$cubeTotal")
+    println("Total\t$squareTotal\t$cubeTotal")
 }
