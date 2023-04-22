@@ -29,8 +29,10 @@ fun main() {
                 ctr1++
             }
 
-            // even numbers counted output
+            // array and even numbers counted output
+            println("Array contains values $numbers")
             println("The number of even numbers are: $evenCtr")
+
         } else {
             println("Input can not be zero or negative.")
         }
@@ -38,6 +40,7 @@ fun main() {
         // Restart Program Loop input
         println("Restart Program? [Y/N]")
         answer = readln().first()
+        println("**************************")
     }
 
 }
