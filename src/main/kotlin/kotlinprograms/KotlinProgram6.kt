@@ -7,5 +7,4 @@ fun main() {
     println(andOperator)
     println(orOperator)
     println(notOperator)
-
 }
