@@ -27,8 +27,8 @@ fun main() {
 //        totalSales += athleteSales
 //    }
 
-    for ((id, element) in salesMap) {
-        println("$id\t${String.format("%.2f", element)}")
+    for ((athleteName, athleteSales) in salesMap) {
+        println("$athleteName\t${String.format("%.2f", athleteSales)}")
         totalSales += athleteSales
     }
 
