@@ -1,7 +1,5 @@
 package practiceactivities
 
-import java.text.Format
-
 fun main() {
     // data set
     var salesMap = mutableMapOf<String, Float>()
@@ -23,10 +21,16 @@ fun main() {
     println("*******************")
     var totalSales = 0f
 
-    salesMap.forEach { (athleteName, athleteSales) ->
-        print("$athleteName\t${String.format("%.2f",athleteSales)}")
-        println()
+//    salesMap.forEach { (athleteName, athleteSales) ->
+//        print("$athleteName\t${String.format("%.2f",athleteSales)}")
+//        println()
+//        totalSales += athleteSales
+//    }
+
+    for ((id, element) in salesMap) {
+        println("$id\t${String.format("%.2f", element)}")
         totalSales += athleteSales
     }
+
     println("Total\t${String.format("%.2f",totalSales)}")
 }
