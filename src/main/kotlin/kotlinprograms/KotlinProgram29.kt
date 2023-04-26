@@ -14,7 +14,7 @@ fun main() {
     // 0-3
     while (row < matrix.size) {
         var column = 0
-        while (column < matrix[column].size) {
+        while (column < matrix[row].size) {
             print("${matrix[row][column]} \t")
             column++
         }
