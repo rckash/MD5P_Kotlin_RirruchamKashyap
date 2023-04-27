@@ -22,7 +22,6 @@ fun main() {
     num = readln().toInt()
 
     // variables declaration for the two loops
-    var ctr1 = 0
     var matNum = num * num
 
     // outer loop
