@@ -5,6 +5,6 @@ fun main() {
     sayHello()
 }
 
-fun sayHello() {
+fun sayHello() { // return type // unit does not return anything
     println("Hello")
 }
