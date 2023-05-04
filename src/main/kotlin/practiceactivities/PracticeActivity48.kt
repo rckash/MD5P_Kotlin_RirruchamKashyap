@@ -8,25 +8,20 @@ fun main() {
     var charToCount = readln().first()
 
     //return value storage
-    var charCount = countOccurence(string, charToCount)
+    val charCount = (string countOccurence charToCount)
 
     //output
-    println("Character count: " add charCount.toString())
+    println("Character count: $charCount")
 }
 
-infix fun String.add(otherString: String): String {
-    return this + otherString
-}
-
-fun countOccurence(string: String, charToCount: Char): Int {
-    var stringIndexSize = string.length - 1
-    var postString = string.uppercase()
-    var postChar = charToCount.uppercaseChar()
+infix fun String.countOccurence (thisChar: Char): Int {
+    var postString = this.uppercase()
+    var postChar = thisChar.uppercaseChar()
     var charCount = 0
 
-    for (i in 0..stringIndexSize) {
-        if (postString[i] == postChar) {
-            charCount += 1
+    for (i in postString) {
+        if (postChar == i){
+            charCount++
         }
     }
 
