@@ -1,18 +1,25 @@
 fun main() {
     //input
-    print("Enter String #1: ")
+    print("Enter String: ")
     var input1 = readln()
-    print("Enter String #2: ")
-    var input2 = readln()
 
     //process
-    var set1 = input1.toSet()
-    var set2 = input2.toSet()
-    var uniqueSet = set1.union(set2)
+    var postInput1 = input1.uppercase()
+    var maxIndex = input1.lastIndex
+    var reversed = ""
+    for (i in 0..maxIndex) {
+        reversed += input1[maxIndex - i].uppercase()
+    }
+
+    var palindrome = false
+    if (postInput1 == reversed) {
+        palindrome = true
+    }
 
     //output
-    print("Unique: ")
-    for (char in uniqueSet) {
-        print(char)
+    if (palindrome == true) {
+        println("$input1 is a Palindrome")
+    } else {
+        println("$input1 is not a Palindrome")
     }
 }
