@@ -16,8 +16,6 @@ fun main() {
         }
         uniqueChars
     }
-
     //output
     print("Unique: ${getUnique(input1, input2)}")
-
 }
