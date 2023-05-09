@@ -1,3 +1,16 @@
+//objects - represents something in the real world
+//class - blueprint of an object
+//Structural Programming, Procedural Programming
+//top to bottom
+
+//Person Class
+///////attributes/properties
+//name
+//age
+//////behaviors
+//walk
+//eat
+
 class Person{
     //attributes
     var name: String
