@@ -1,4 +1,3 @@
-package kotlinbasics
 
 fun main() {
     //Form Head
