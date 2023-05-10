@@ -31,41 +31,41 @@ fun main() {
         var input: String = ""
         when (menuSelection) {
             1 -> {
-                print("Enter Name of Student: ")
+                print("Enter Name of Student: ")        //check student in record function
                 input = readln().uppercase()
-                isStudentInRecord(input, studentTable)
+                println(isStudentInRecord(input, studentTable))
             }
             2 -> {
-                print("Enter Name of Student to add: ")
+                print("Enter Name of Student to add: ")         //add student in record function
                 input = readln()
                 addStudent(input, studentTable)
                 println("Record Updated! Current Record: ")
                 println(studentTable)
             }
             3 -> {
-                print("Enter Name of Student to remove: ")
+                print("Enter Name of Student to remove: ")          //remove student in record function
                 input = readln()
                 removeStudent(input, studentTable)
                 println("Record Updated! Current Record: ")
                 println(studentTable)
             }
             4 -> {
-                println(countStudent(input, studentTable))
+                countStudent(input, studentTable)           //count students in record function
             }
             5 -> {
-                print("Enter Name of Student to Wild Search: ")
+                print("Enter Name of Student to Wild Search: ")         //wild search student in record function
                 input = readln().uppercase()
                 println("Students with \"$input\" in name: ")
                 println(searchStudentWildSearch(input, studentTable))
             }
             6 -> {
-                print("Enter Name of Student to Search: ")
-                input = readln()
+                print("Enter Name of Student to Search: ")          //exact search student in record function
+                input = readln().uppercase()
                 println("Search result: ")
                 println(searchStudentName(input, studentTable))
             }
             7 -> {
-                println("Enter Name of Student to Wild Search / Exact Search: ")
+                println("Enter Name of Student to Wild Search / Exact Search: ")        //wild search/exact search student in record function
                 input = readln().uppercase()
                 println("Search result: ")
 
@@ -76,7 +76,7 @@ fun main() {
                 }
             }
             8 -> {
-                var showStudents = { studentTable: ArrayList<String> ->
+                var showStudents = { studentTable: ArrayList<String> ->         //display students in record function
                     println(studentTable)
                     studentTable
                 }
@@ -84,12 +84,17 @@ fun main() {
                 showStudents(studentTable)
             }
             9 -> {
-                println("Exiting Program...")
+                println("Exiting Program...")           //exit program function
                 break
             }
             else -> {
                 println("Error: Invalid Selection! Choose from 1-9.\n")
             }
+        }
+        println("\nInput \"E\" to End Program or Any Other Key to Restart Program: ")       //restart program function
+        var restart = readln().first()
+        if ((restart == 'E') || (restart == 'e')) {
+            break
         }
         println()
     } catch (exception: NumberFormatException) {
@@ -118,7 +123,7 @@ fun removeStudent(input: String, studentTable: ArrayList<String>) {
 }
 
 fun countStudent(input: String, studentTable: ArrayList<String>) {
-    studentTable.size
+    println(studentTable.size)
 }
 
 fun searchStudentWildSearch(input: String, studentTable: ArrayList<String>): String {

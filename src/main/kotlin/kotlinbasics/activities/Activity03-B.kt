@@ -30,41 +30,41 @@ fun main() {
             var input: String = ""
             when (menuSelection) {
                 1 -> {
-                    print("Enter Name of Book: ")
+                    print("Enter Name of Book: ")               //check book in record function
                     input = readln().uppercase()
                     println(isBookInRecord(input, bookArray))
                 }
                 2 -> {
-                    print("Enter Name of Book to add: ")
+                    print("Enter Name of Book to add: ")        //add book in record function
                     input = readln()
                     addBook(input, bookArray)
                     println("Record Updated! Current Record: ")
                     println(bookArray)
                 }
                 3 -> {
-                    print("Enter Name of Book to remove: ")
+                    print("Enter Name of Book to remove: ")             //remove book in record function
                     input = readln()
                     removeBook(input, bookArray)
                     println("Record Updated! Current Record: ")
                     println(bookArray)
                 }
                 4 -> {
-                    countBooks(input, bookArray)
+                    countBooks(input, bookArray)                    //count books in record function
                 }
                 5 -> {
-                    print("Enter Name of Book to Wild Search: ")
+                    print("Enter Name of Book to Wild Search: ")            //wild search book in record function
                     input = readln().uppercase()
                     println("Books with \"$input\" in name: ")
                     println(searchBookWildSearch(input, bookArray))
                 }
                 6 -> {
-                    print("Enter Name of Book to Search: ")
+                    print("Enter Name of Book to Search: ")             //exact search book in record function
                     input = readln().uppercase()
                     println("Search result: ")
                     println(searchBookName(input, bookArray))
                 }
                 7 -> {
-                    var showBooks = { bookArray: ArrayList<String> ->
+                    var showBooks = { bookArray: ArrayList<String> ->           //exact/wild search book in record function
                         println(bookArray)
                         bookArray
                     }
@@ -72,14 +72,14 @@ fun main() {
                     showBooks(bookArray)
                 }
                 8 -> {
-                    println("Exiting Program...")
+                    println("Exiting Program...")               //exit program function
                     break
                 }
                 else -> {
                     println("Error: Invalid Selection! Choose from 1-8.\n")
                 }
             }
-            println("\nInput \"E\" to End Program or Any Other Key to Restart Program: ")
+            println("\nInput \"E\" to End Program or Any Other Key to Restart Program: ")           //restart program function
             var restart = readln().first()
             if ((restart == 'E') || (restart == 'e')) {
                 break
