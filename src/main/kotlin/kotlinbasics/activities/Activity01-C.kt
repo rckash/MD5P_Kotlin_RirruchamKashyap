@@ -1,4 +1,4 @@
-package kotlinbasics.activities
+
 
 fun main() {
     /*You are tasked to automate an inventory system for a grocery.

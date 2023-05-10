@@ -1,4 +1,3 @@
-package kotlinbasics.activities
 
 fun main() {
     /*You are tasked to create a directory of the students taking this course.

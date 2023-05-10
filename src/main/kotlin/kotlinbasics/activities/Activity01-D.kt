@@ -1,4 +1,4 @@
-package kotlinbasics.activities
+
 
 fun main() {
     while (true) {
