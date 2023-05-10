@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 //fun main() {
     //Write a function that takes in a list of integers and a higher-order function as arguments.
     // The higher-order function should take in an integer and return a string.
