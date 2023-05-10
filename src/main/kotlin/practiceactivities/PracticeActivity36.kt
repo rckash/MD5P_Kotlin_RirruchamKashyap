@@ -9,23 +9,20 @@ fun main() {
         mutableListOf(0, 0, 0), // 2
     )
 
-    // variables for
+    // variables declaration
     var row = 0
     var inputNumber = 1
     var magicSquareNumber = 15
     var magicSquareCheck = true
-    var verticalSum = 0
-    var horizontalSum = 0
-    var totalSum = 0
-    var diagonalSum = 0
+    var input = 0
 
     // loop for input to matrix
     while (row < matrix.size) {
         var column = 0
-        var input = 0
         while (column < matrix[row].size) {
             println("Enter number $inputNumber: ")
             input = readln().toInt()
+            matrix[row][column] = input
             column++
             inputNumber++
         }
@@ -34,22 +31,64 @@ fun main() {
 
     // check for magic square
     row = 0
+    var columnCheck1 = 0
+    var columnCheck2 = 0
+    var columnCheck3 = 0
+    var diagonalRightCheck = 0
+    var diagonalLeftCheck = 0
+
     while (row < matrix.size) {
         var column = 0
+        var rowCheck = 0
+
         while (column < matrix[row].size) {
-//            var horizontalCheck = 0
-//            matrix[row][column] = horizontalCheck
-//            horizontalSum += horizontalCheck
+            rowCheck += matrix[row][column]
+
+            if (column == 0){
+                columnCheck1 += matrix[row][column]
+                println("column1 = $columnCheck1")
+                if (row == 0) {
+                    diagonalRightCheck += matrix[row][column]
+                    println("diagonal = $diagonalRightCheck")
+                }
+                if (row == 2) {
+                    diagonalLeftCheck += matrix[row][column]
+                    println("diagonalL = $diagonalLeftCheck")
+                }
+
+            } else if (column == 1){
+                columnCheck2 += matrix[row][column]
+                println("column2 = $columnCheck2")
+                if (row == 1) {
+                    diagonalRightCheck += matrix[row][column]
+                    println("diagonal = $diagonalRightCheck")
+
+                    diagonalLeftCheck += matrix[row][column]
+                    println("diagonalL = $diagonalLeftCheck")
+                }
+            } else if (column == 2){
+                columnCheck3 += matrix[row][column]
+                println("column3 = $columnCheck3")
+                if (row == 2) {
+                    diagonalRightCheck += matrix[row][column]
+                    println("diagonal = $diagonalRightCheck")
+                }
+                if (row == 0) {
+                    diagonalLeftCheck += matrix[row][column]
+                    println("diagonalL = $diagonalLeftCheck")
+                }
+            }
+
             column++
         }
-        if (horizontalSum != magicSquareNumber) {
+
+        if (rowCheck != magicSquareNumber){
             magicSquareCheck = false
         }
-//        totalSum += matrix[row][column]
+
         row++
+        println()
     }
-    println(horizontalSum)
-    println(totalSum)
 
     // loop for displaying matrix
     row = 0
@@ -62,6 +101,7 @@ fun main() {
         row++
         println()
     }
+
 
     println("Magic Square is $magicSquareCheck")
     }
