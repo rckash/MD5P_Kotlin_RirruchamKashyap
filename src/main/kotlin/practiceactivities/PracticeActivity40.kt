@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 
 //Write a function called removeDuplicates() that takes in a string and returns a string with all consecutive duplicate characters removed.
 //Sample Input/Output

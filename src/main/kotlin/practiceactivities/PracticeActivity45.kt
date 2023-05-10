@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 
 //Write a function called findFactorial() that takes in a positive integer n
 // and returns the factorial of n, which is the product of all positive integers from 1 to n.

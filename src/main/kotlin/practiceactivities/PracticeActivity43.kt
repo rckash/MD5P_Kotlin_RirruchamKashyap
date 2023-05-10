@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 
 //Write a function called calculateBMI() that takes in a person's weight in kilograms and height in meters, and returns their body mass index (BMI).
 // The formula for BMI is weight (kg) / (height (m) * height (m)).

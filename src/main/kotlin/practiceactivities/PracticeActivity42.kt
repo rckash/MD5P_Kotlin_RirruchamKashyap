@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 
 //Write a function called countOccurence() that takes in a string and a character, and returns the number of times the character appears in the string.
 //Sample Input/Output

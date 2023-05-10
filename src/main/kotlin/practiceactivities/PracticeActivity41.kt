@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 
 //Write a function called replaceSpaces() that takes in a string and replaces all spaces with underscores.
 //Sample Input/Output

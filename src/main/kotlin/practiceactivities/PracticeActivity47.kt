@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 
 //Write a function called countWords() that takes in a string of text and returns the number of words in the text. A word is defined as any sequence of characters separated by whitespace.
 //

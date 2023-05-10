@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 
 //Write a function called computeAverage() that takes in a list of numbers and returns their average. If the list is empty, the function should return 0.
 //

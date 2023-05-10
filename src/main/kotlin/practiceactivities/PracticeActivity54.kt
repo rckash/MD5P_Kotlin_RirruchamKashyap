@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 fun main() {
     println("Enter number of integers to be input: ")
     var numInp = readln().toInt()
