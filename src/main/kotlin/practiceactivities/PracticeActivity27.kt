@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 
 fun main() {
 //    Create a program that displays the matrix of a number entered by the user. If a user enters 4, it

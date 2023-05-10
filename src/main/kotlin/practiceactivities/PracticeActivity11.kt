@@ -1,5 +1,4 @@
-package kotlinbasics.practiceactivities
-
+package practiceactivities
 fun main() {
     // variables
     var studentName : String = ""

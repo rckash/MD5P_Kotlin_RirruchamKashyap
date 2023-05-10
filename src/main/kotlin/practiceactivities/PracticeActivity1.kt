@@ -1,5 +1,4 @@
-package kotlinbasics.practiceactivities
-
+package practiceactivities
 fun main() {
     // variables
     var base : Float = 10f

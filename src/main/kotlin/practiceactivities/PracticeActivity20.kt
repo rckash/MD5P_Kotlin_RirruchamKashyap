@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 
 fun main() {
     // a program that prints the multiplication table of a given number from 1 to 10.

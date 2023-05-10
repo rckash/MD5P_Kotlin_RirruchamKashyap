@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 
 fun main() {
     // a Kotlin program that prompts the user to enter a positive integer n, and then prints out the factorial of n. Use do-while statement.

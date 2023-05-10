@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 
 fun main() {
     // Kotlin program that will accept 5 numbers and display the average

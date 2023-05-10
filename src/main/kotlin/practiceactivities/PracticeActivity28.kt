@@ -1,4 +1,4 @@
-package kotlinbasics.practiceactivities
+package practiceactivities
 
 fun main() {
 //    Create a program that can convert fahrenheit to celsius or vice versa. After computing the
