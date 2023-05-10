@@ -1,4 +1,4 @@
-//objects - represents something in the real world
+package kotlinoop.kotlinoop1//objects - represents something in the real world
 //class - blueprint of an object
 //Structural Programming, Procedural Programming
 //top to bottom
