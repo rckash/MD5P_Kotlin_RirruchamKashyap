@@ -1,15 +1,10 @@
 package kotlinoop.activities.activity04c
 
-class SanitaryProducts {
-    constructor(
-        var name: String,
-        var type: String,
-        var price: Int
-        var expirationDate: Int
-    ) {
-        name: String = ""
-        type: String = ""
-        price: Int = 0
-        expirationDate: Int = 0
-    }
+class SanitaryProducts(
+    var name: String,
+    var type: String,
+    var price: Int,
+    var expirationDate: Int
+) {
+
 }

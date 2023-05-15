@@ -1,15 +1,9 @@
 package kotlinoop.activities.activity04c
 
-class Vegetables {
-    constructor(
-        var name: String,
-        var type: String,
-        var price: Int
-        var expirationDate: Int
-    ) {
-        name: String = ""
-        type: String = ""
-        price: Int = 0
-        expirationDate: Int = 0
-    }
+class Vegetables(
+    var name: String,
+    var type: String,
+    var price: Int,
+    var expirationDate: Int
+) {
 }
