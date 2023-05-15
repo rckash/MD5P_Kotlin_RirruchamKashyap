@@ -41,7 +41,10 @@ fun titleWildSearch(magazineArray: ArrayList<Magazine>, newspaperArray: ArrayLis
     println()
 }
 
-fun authorWildSearch(magazineArray: ArrayList<Magazine>, newspaperArray: ArrayList<Newspaper>, comicsArray: ArrayList<Comics>, booksArray: ArrayList<Book>) {
+fun authorWildSearch(magazineArray: ArrayList<Magazine>,
+                     newspaperArray: ArrayList<Newspaper>,
+                     comicsArray: ArrayList<Comics>,
+                     booksArray: ArrayList<Book>) {
     //input
     print("Enter Author to search for: ")
     var input = readln().uppercase()

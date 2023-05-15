@@ -20,8 +20,6 @@ fun main() {
         Student("Inosuke", "Hashibira", "Suke", 1118, 2017)
     )
 
-
     wildSearch(studentSet)
-
 }
 

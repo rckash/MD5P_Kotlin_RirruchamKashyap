@@ -6,5 +6,4 @@ data class Comics(
     var yearPublished: Int,
     var illustrators: String,
     var publisher: String
-) {
-}
+)

@@ -31,5 +31,4 @@ fun main() {
     titleWildSearch(magazineArray, newspaperArray, comicsArray)
     println("Author Wild Search")
     authorWildSearch(magazineArray, newspaperArray, comicsArray, booksArray)
-
 }
