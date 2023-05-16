@@ -12,13 +12,60 @@ fun main() {
         Course(25302, "World Literature", "Andrew Kate",80,arrayListOf())
     )
 
+    //class instantiation
     var myStudent = Student()
-    myStudent.enrollStudent(studentArray, courseArray)
-    myStudent.withdrawStudent(studentArray, courseArray)
+    var myCourse = Course()
 
+    while (true) {
+        //menu
+        println("STUDENT ENROLLMENT SYSTEM")
+        println("powered by: Kashyap Systems")
+        println("****************************************")
+        println("STUDENT FUNCTIONS")
+        println("[1] Enroll Student in Course")
+        println("[2] Withdraw Student from Course")
+        println("[3] Generate Student Report")
+        println("COURSE FUNCTIONS")
+        println("[4] Add Student in Course")
+        println("[5] Remove Student in Course")
+        println("[6] Generate Course Report")
+        println("[7] Exit\n")
 
+        //Menu Input and Process
+        print("Enter Function Code (1-7): ")
+        var menuInput = readln().toInt()
+        println()
 
+        when (menuInput) {
+            1 -> {
+                myStudent.enrollStudent(studentArray, courseArray)
+            }
 
+            2 -> {
+                myStudent.withdrawStudent(studentArray, courseArray)
+            }
 
+            3 -> {
+                myStudent.generateStudentReport(studentArray, courseArray)
+            }
+
+            4 -> {
+                myCourse.enrollStudent(studentArray, courseArray)
+            }
+
+            5 -> {
+                myCourse.withdrawStudent(studentArray, courseArray)
+            }
+
+            6 -> {
+                myCourse.generateCourseReport(studentArray, courseArray)
+            }
+
+            7 -> {
+                break
+            }
+        }
+
+    }
 }
 

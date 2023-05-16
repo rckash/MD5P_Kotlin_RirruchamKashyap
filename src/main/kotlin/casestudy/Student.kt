@@ -38,17 +38,15 @@ data class Student(
         for (i in 0..studentArray.lastIndex) {
             if (studentArray[i].name.uppercase().contains(enrollmentNameInput)) {
                 studentArray[i].enrolledCourses.add(courseToEnrollIn)
-                print("${studentArray[i].studentID}, ${studentArray[i].name}, ${studentArray[i].age}, ${studentArray[i].gender}, ${studentArray[i].enrolledCourses}\n")
             }
         }
         //output for course update
         for (i in 0..courseArray.lastIndex) {
             if (courseArray[i].courseName.uppercase().contains(enrollmentCourseInput)) {
                 courseArray[i].enrolledStudents.add(studentToEnroll)
-                print("${courseArray[i].courseID}, ${courseArray[i].courseName}, ${courseArray[i].instructorName}, ${courseArray[i].maxNumOfStudents}\n")
-                println("Enrolled Students: ${courseArray[i].enrolledStudents}")
             }
         }
+        println()
     }
 
     fun withdrawStudent(studentArray: ArrayList<Student>, courseArray: ArrayList<Course>) {
@@ -80,17 +78,30 @@ data class Student(
         for (i in 0..studentArray.lastIndex) {
             if (studentArray[i].name.uppercase().contains(withdrawalNameInput)) {
                 studentArray[i].enrolledCourses.remove(courseToWithdrawFrom)
-                print("${studentArray[i].studentID}, ${studentArray[i].name}, ${studentArray[i].age}, ${studentArray[i].gender}, ${studentArray[i].enrolledCourses}\n")
             }
         }
         //output for course update
         for (i in 0..courseArray.lastIndex) {
             if (courseArray[i].courseName.uppercase().contains(withdrawalCourseInput)) {
                 courseArray[i].enrolledStudents.remove(studentToWithdraw)
-                print("${courseArray[i].courseID}, ${courseArray[i].courseName}, ${courseArray[i].instructorName}, ${courseArray[i].maxNumOfStudents}\n")
                 println("Enrolled Students: ${courseArray[i].enrolledStudents}")
             }
         }
+        println()
+    }
+
+    fun generateStudentReport(studentArray: ArrayList<Student>, courseArray: ArrayList<Course>) {
+        print("Enter Student Name to Generate Report for: ")
+        var generateStudentCourseInput = readln().uppercase()
+
+        for (i in 0..studentArray.lastIndex) {
+            if (studentArray[i].name.uppercase().contains(generateStudentCourseInput)) {
+                println("Student Report For: ${studentArray[i].studentID}, ${studentArray[i].name}")
+                println("Enrolled Courses: ")
+                println(studentArray[i].enrolledCourses)
+            }
+        }
+        println()
     }
 
 
