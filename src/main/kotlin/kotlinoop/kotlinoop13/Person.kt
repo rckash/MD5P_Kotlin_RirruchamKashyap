@@ -1,6 +1,6 @@
 package kotlinoop.kotlinoop13
 
-class Person: Singer, Dancer {
+class Person: Singer, Dancer, Performer() {
     private var name: String
 
     init {
@@ -21,5 +21,9 @@ class Person: Singer, Dancer {
 
     override fun dance() {
         println("A dancer dances...")
+    }
+
+    override fun perform() {
+        println("A person can perform")
     }
 }
