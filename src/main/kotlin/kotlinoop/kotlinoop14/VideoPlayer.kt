@@ -1,4 +1,7 @@
 package kotlinoop.kotlinoop14
 
-class VideoPlayer {
+class VideoPlayer: Playable {
+    override fun play() {
+        println("Playing video...")
+    }
 }
